@@ -1,0 +1,418 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TopBud</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="data/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="sans-serif.css">
+  <link rel="stylesheet" type="text/css" media="print" href="serif.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.zoom.min.js"></script>
+  <script type="text/javascript" src="galleries.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <script id="anchor-down" type="text/javascript">
+    $(document).ready(function(){
+      $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+      });
+    });
+  </script>
+  <script id="gallery" type="text/javascript">
+    $.fancybox.open({
+    	src  : 'link-to-your-page.html',
+    	type : 'iframe',
+    	opts : {
+    		afterShow : function( instance, current ) {
+    			console.info( 'done!' );
+    		}
+    	}
+    });
+  </script>
+  <script id="slick" type="text/javascript">
+    $(document).ready(function(){
+      $('.des').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $('.des-el').zoom({});
+    });
+  </script>
+  <script id="ssl" type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.protocol === 'http:') {
+        window.location.href = "https://topbud.lviv.ua";
+      };
+    });
+  </script>
+  <script type="text/javascript">
+    function cost_page() {
+      document.location.replace("https://topbud.lviv.ua/cost.html");
+    }
+  </script>
+</head>
+<body style="background-color: #e9e9e9;">
+  <header id="header" class="header">
+  </header>
+  <div id="menu" class="menu">
+    <div class="row">
+      <div class="col-lg-2">
+        <a href="#about-us"><b>Про нас</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="#repair"><b>Ремонт</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="#design"><b>Дизайн</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="#build"><b>Будівництво</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="javascript:;" onclick="cost_page()" style="color: #335ba5;"><b>Сертифікати</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="#contact"><b>Контакти</b></a>
+      </div>
+    </div>
+  </div>
+  <div id="about-us" class="container">
+    <div class="jumbotron">
+      <h1 style="color: #335ba5; font-size: 350%; margin-top: -1vh;">
+        Про компанію
+      </h1>
+        <p class="text-0">Перевагою нашої компанії є те, що ми поєднали послуги з дизайну і виконання ремонтно-будівельних робіт. Усе, що ми проектуємо, — ми втілюємо в життя.<br/></p>
+        <p class="text-1">Замовнику не потрібно окремо працювати з дизайнером, а потім шукати бригади або майстрів, згідних або достатньо компетентних, щоб виконати поставлені дизайнером завдання. Не потрібно самому організовувати поставки матеріалів, контролювати технологічний процес ремонту, комунікувати між собою різних майстрів — штукатурів, плиточників, гіпсокатронників тощо. Ми працюємо за принципом «дзвінок на один номер телефону», тобто замовнику достатньо донести свої побажання до однієї людини, яка організовує комунікацію між виконавцями.<br/></p>
+        <p class="text-1">Замовник завжди знатиме вартість свого ремонту ще до його початку, оскільки обов'язково отримає ґрунтовний кошторис ремонтних робіт.<br/></p>
+        <p class="text-1">Робота нашої компанії націлена на те, щоб забезпечити замовнику комфортні умови проведення ремонту, економію нервів і сил, а в кінцевому результаті і значної кількості коштів.<br/></p>
+        <p class="text-1">Ми завжди виконуємо гарантійні зобов'язання на виконані роботи, а також надаємо післягарантійне обслуговування.<br/></p>
+        <p class="text-1">Найкращий інтер'єр народжується в тандемі проектування і виконання.<br/></p>
+        <p class="text-1">Завжди назустріч клієнту!</p>
+    </div>
+  </div>
+  <div id="repair" class="container">
+    <div class="gallery-4" style="align: center;">
+      <div class="jumbotron" style="background-color: #e5e5e5;">
+        <div class="row">
+          <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh;"/></a></div>
+          <div class="col-lg-11" style="margin-bottom: 2vh;"><h1 style="color: #335ba5; font-size: 350%;">Ремонт</h1></div>
+        </div>
+        <div class="row" style="">
+          <div class="col-lg-6 thumb" style=" padding: 1vh;">
+            <div style="background-color: #ccc; border-radius: 20px; height: auto; padding: 1vh;">
+              <a onclick="g()">
+                <img class="img-fluid" src="data/images/repair/economy.jpg" alt="" style="height: auto">
+              </a>
+              <h3 style="text-align: center;">Ремонт "Базовий"</h3>
+              <p class="text-2">Санітарний ремонт помешкання без перепланування та прокладання комунікацій.</p>
+              <p class="text-2">Оздоблення недорогими матеріалами.</p>
+              <p class="price">від 4000 грн за кв.м</p>
+            </div>
+          </div>
+          <div class="col-lg-6 thumb" style="padding: 1vh;">
+            <div style="background-color: #ccc; border-radius: 20px; height: auto; padding: 1vh;">
+              <a onclick="g2()">
+                <img class="img-fluid" src="data/images/repair/exclusive.jpg" alt="" style="height: auto">
+              </a>
+              <h3 style="text-align: center;">Ремонт "Елітний"</h3>
+              <p class="text-2">Включає перепланування помешкання, прокладання комунікацій, оздоблення
+                матеріалами преміум-сегменту, влаштування складних конструкцій під індивідуальне замовлення</p>
+              <p class="price">від 12000 грн за кв.м</p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style=""></div>
+        <div class="row" style="">
+          <div class="col-lg-6 thumb" style="padding: 1vh;">
+            <div style="background-color: #ccc; border-radius: 20px; height: auto; padding: 1vh;">
+              <a onclick="g3()">
+                <img class="img-fluid" src="data/images/repair/standart.jpg" alt="" style="height: auto">
+              </a>
+              <h3 style="text-align: center;">Ремонт "Оптимальний"</h3>
+              <p class="text-2">Ремонт з повним або частковим переплануванням та прокладанням комунікацій, оздоблення
+              якісними матеріалами за ціною середнього рівня.</p>
+              <p class="price">від 6500 грн за кв.м</p>
+              <p class="text-2"></p>
+            </div>
+          </div>
+          <div class="col-lg-6 thumb" style="padding: 1vh;">
+            <div style="background-color: #ccc; border-radius: 20px; height: auto; padding: 1vh;">
+              <a onclick="g4()">
+                <img class="img-fluid" src="data/images/repair/public.jpg" alt="" style="height: auto">
+              </a>
+              <h3 style="text-align: center;">Ремонт приміщень громадського призначення</h3>
+              <p class="text-2">Ремонт офісів, магазинів, готелів, кафе, ресторанів, під`їздів тощо будь-якої складності.</p>
+              <br/>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a href="javascript:;" onclick="g5()" style="">
+          <u><h3 class="price-2">Розцінки на ремонтні роботи</h3></u>
+        </a>
+      </div>
+    </div>
+    <p style="margin-bottom: 5vh;"></p>
+  </div>
+  <div id="design" class="container">
+    <div class="" style="align: center;">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh;"/></a></div>
+          <div class="col-lg-11"><h1 style="color: #335ba5; font-size: 350%;">Дизайн</h1></div>
+        </div>
+        <p class="text-0">Досвідчені компетентні дизайнери індивідуально створять образ приміщення на основі вивчення способу життя замовника, з обов`язковим урахуванням усіх його побажань. Протягом усього процесу ремонту відбувається постійний контакт наших дизайнерів з виконавцями ремонтних робіт, тому дизайнерський супровід в нашій компанії відбувається за замовчуванням.</p>
+        <p class="text-1">Наші дизайнери працюють з будь-яким стилем інтер`єру - від мінімалізму до класики, а також володіють мистецтвом еклектики - гармонійного поєднання кількох стилів.</p>
+        <div style="background-color: #ccc; height: auto; border-radius: 15px;">
+          <section class="des">
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b1_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b1_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b2_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b2_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b3_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b3_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b4_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b4_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b5_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/b5_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g1_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g1_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g2_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g2_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g3_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g3_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g4_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g4_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g5_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g5_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g6_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g6_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g7_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g7_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g8_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g8_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g9_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g9_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g10_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g10_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g11_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g11_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g12_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g12_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g13_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g13_1.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g14_2.jpg"/>
+            </div>
+            <div class="des-el">
+              <img class="img-el" src="data/images/design/g14_1.jpg"/>
+            </div>
+          </section>
+        </div>
+        <p style="margin-bottom: 5vh;"></p>
+      </div>
+    </div>
+  </div>
+  <div id="build" class="container">
+    <div class="" style="align: center;">
+      <div class="jumbotron" style="background-color: #e5e5e5;">
+        <div class="row">
+          <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh;"/></a></div>
+          <div class="col-lg-11 large"><h1 style="color: #335ba5; font-size: 350%;">Будівництво</h1></div>
+        </div>
+        <p class="text-0">Проектуємо та будуємо індивідуальні житлові будинки, від фундаменту до кінцевих оздоблювальних робіт.</p>
+        <p class="text-1">Виконуємо проектування та будівництво житлових будинків за енергоощадними технологіями.</p>
+        <div class="row" style="font-size: 125%; text-align: justify;">
+          <div class="col-lg-6">
+            <div class="jumbotron" style="background-color: #f2f2f2; padding: 5vh;">
+              <p class="text-1" style="text-align: center; text-indent: 0px;">Проектування відбувається з урахуванням:</p>
+              <ul>
+                <li>розташування ділянки під забудову відносно Півночі-Півдня, Сходу-Заходу;</li>
+                <li>кількості мешканів проектованого будинку;</li>
+                <li>урахування потреб та способу життя майбутніх мешканців;</li>
+                <li>принципів ергономічного використання невеликої площі приміщень.</li>
+              </ul>
+            </div>
+            <div class="jumbotron" style="background-color: #f2f2f2; padding: 5vh;">
+              <p class="text-1" style="text-align: center; text-indent: 0px;">Переваги наших енергоощадних будинків:</p>
+              <ul>
+                <li>Суттєва економія коштів на комунальні платежі.</li>
+                <li>Економія на підведенні до будинку газових комунікацій (немає необхідності у використанні газу).</li>
+                <li>Індивідуальний підхід до особливостей розташування ділянки, рівня грунтових вод.</li>
+                <li>Наш енергоощадний будинок - не каркасний, а традиційно мурований, капітальний та надійний. Прослужить не одному поколінню господарів.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="jumbotron" style="background-color: #f2f2f2; padding: 5vh;">
+              <p class="text-1" style="text-align: center; text-indent: 0px;">Наша компанія розробила принципи енергоощадного будівництва:</p>
+              <ul>
+                <li>Залізобетонний фундамент, надійно утеплений та гідроізольований.</li>
+                <li>Залізобетонне перекриття з 10см утепленням та гідроізоляцією.</li>
+                <li>Встановлення теплових насосів геотермального типу.</li>
+                <li>Влаштування системи теплих підлог.</li>
+                <li>Муровані стіни з газоблоків Aeroc товщиною 40см.</li>
+                <li>Утеплення фасаду блоками AerocEnergy товщиною 10см.</li>
+                <li>Дах утеплений за канадською технологією - піною ACYNENE.</li>
+                <li>Всі залізобетонні перемички над вікнами та дверними пройомами надійно теплоізольовані U-блоками Aeroc.</li>
+                <li>Енергозберігаючі вікна.</li>
+              </ul>
+            </div>
+            <div class="jumbotron" style="background-color: #f2f2f2; padding: 1vh;">
+              <p style="width: 80%; font-size: 140%; text-align: center; margin-top: 5vh; margin-bottom: 5vh; margin-left:auto; margin-right:auto;"><i>Подаруйте своїй сім`ї економне та комфортне житло!</i></p>
+            </div>
+          </div>
+        </div>
+        <p class="text-1" style="text-align: center;"><b>Зберігаючи переваги традиційного капітального будівництва, наш будинок одночасно є енергоощадним та надійним і довговічним.</b></p>
+        <p style="text-align: right; background-color: #e5e5e5;"><a href="https://topbud.in.ua/"><b><u>Детальніше</u></b></a></p>
+        <img src="data/images/фотопленка.png"/> <!--  -->
+        <p style="margin-bottom: 5vh;"></p>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="container">
+    <div class="jumbotron" style="text-align: center;">
+      <div class="row">
+        <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh; text-align: null;"/></a></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8"><h1 style="color: #335ba5; font-size: 350%;">Контакти</h1></div>
+        <div class="col-lg-2"><a href="https://www.facebook.com/topbudlviv/"><img src="data/images/find-us-on-facebook-badge.png"  style="height: 15vh;"/></a></div>
+      </div>
+      <div class="contact-info" style="margin-top: 4vh;">
+        <div class="row">
+          <div class="col-lg-3">
+            <kbd>Адреса:</kbd><br/>
+            <p>Львів, вул. Зелена 149a, третій поверх</p>
+          </div>
+          <div class="col-lg-3">
+            <kbd>Телефон:</kbd><br/>
+            <p>+38(067)67-59-309<br>+38(067)67-44-103</p>
+          </div>
+          <div class="col-lg-3">
+            <kbd>E-mail:</kbd><br/>
+            <p>topbudlviv@gmail.com<br/>yuratopbud@gmail.com</p>
+          </div>
+          <div class="col-lg-3">
+            <kbd>Графік роботи:</kbd><br/>
+            <p>Пн-Пт: 10:00-18:00<br/>(Сб: за домовленістю)</p>
+          </div>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1238.7038318989332!2d24.060855337758923!3d49.81109364042319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae8040d2adde1%3A0xe2fec07b5b6e3da9!2z0KLQvtC_INCR0YPQtA!5e0!3m2!1suk!2sua!4v1566215995821!5m2!1suk!2sua" width="100%" height="450" frameborder="0" style=""></iframe>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-lg-3">
+        <p class="fl-l"><br/>&copy; 2008-2019 ТОП БУД <br />Всі права захищено</p>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2">
+        <a href="https://topbud.lviv.ua/"><img src="data/images/logo.svg" width="72" height="80" alt=""></a>
+      </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-2">
+        <p class="fl-r"><br/>Created by<br/> Mykhal'chenko Viacheslav</p>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<!--
+<address>
+  <kbd>Адреса:</kbd><br/>
+  <p>Львів, вул. Зелена 147a, третій поверх</p>
+  <kbd>Телефон:</kbd><br/>
+  <p>+38 (067) 67-59-309, +38 (067) 674-41-03</p>
+  <kbd>E-mail:</kbd><br/>
+  <p>topbudlviv@gmail.com</p>
+  <kbd>Графік роботи:</kbd><br/>
+  <p>Пн-Пт: 10:00-18:00 (Сб: за домовленістю)</p>
+</address>
+-->

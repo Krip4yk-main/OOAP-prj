@@ -1,0 +1,221 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TopBud</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="data/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="sans-serif.css">
+  <link rel="stylesheet" type="text/css" media="print" href="serif.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.zoom.min.js"></script>
+  <script type="text/javascript" src="galleries.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <script id="anchor-down" type="text/javascript">
+    $(document).ready(function(){
+      $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+      });
+    });
+  </script>
+  <script id="gallery" type="text/javascript">
+    $.fancybox.open({
+    	src  : 'link-to-your-page.html',
+    	type : 'iframe',
+    	opts : {
+    		afterShow : function( instance, current ) {
+    			console.info( 'done!' );
+    		}
+    	}
+    });
+  </script>
+  <script id="slick" type="text/javascript">
+    $(document).ready(function(){
+      $('.des').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $('.des-el').zoom({});
+    });
+  </script>
+  <script id="ssl" type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.protocol === 'http:') {
+        window.location.href = "https://topbud.lviv.ua";
+      };
+    });
+  </script>
+  <script id="dialog_script" type="text/javascript">
+    function viewDiv1(){
+      if (document.getElementById("hides1").style.display == "block") {
+        document.getElementById("hides1").style.display = "none";
+      } else {
+        document.getElementById("hides1").style.display = "block";
+      }
+    };
+    function viewDiv2(){
+      if (document.getElementById("hides2").style.display == "block") {
+        document.getElementById("hides2").style.display = "none";
+      } else {
+        document.getElementById("hides2").style.display = "block";
+      }
+    };
+  </script>
+  <script type="text/javascript">
+    function main_page(param) {
+      document.location.replace("https://topbud.lviv.ua/index.html" + param);
+    }
+  </script>
+</head>
+<body style="background-color: #e9e9e9;">
+  <header id="header" class="header">
+  </header>
+  <div id="menu" class="menu">
+    <div class="row">
+      <div class="col-lg-2">
+        <a href="javascript:;" onclick="main_page('#about-us')"><b>Про нас</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="javascript:;" onclick="main_page('#repair')"><b>Ремонт</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="javascript:;" onclick="main_page('#design')"><b>Дизайн</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="javascript:;" onclick="main_page('#build')"><b>Будівництво</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="javascript:;" style="color: #335ba5;"><b>Сертифікати</b></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="#contact"><b>Контакти</b></a>
+      </div>
+    </div>
+  </div>
+  <div id="certificates" class="container">
+    <div class="jumbotron">
+      <p style="color: #999; font-size: 70%; text-align: right;">Сторінка знаходиться у стадії розробки. Вигляд може бути змінено, а наповнення доповнено!</p>
+      <div class="row">
+        <div class="col-lg-2">
+          <a href="javascript:;" onclick="sertificate()"><img src="data/images/sertificate/PARKTOWER/sertificate/pt-30.jpg"></a>
+        </div>
+        <div class="col-lg-10">
+          <p style="text-indent: 4vh;">У нас приємна новина! Компанія ТзОВ «ТОП БУД» спільно з партнерами вручає <a href="javascript:;" onclick="sertificate()" style="text-decoration: none; color: #000;"><u>ПОДАРУНКОВИЙ СЕРТИФІКАТ</u></a> на часткову оплату ремонту з матеріалами кожному покупцеві квартир у <a href="#parktower" style="text-decoration: none; color: #000;"><u>ЖК «PARK TOWER»</u></a> по вул. Стрийська, 86 та у <a href="#continent" style="text-decoration: none; color: #000;"><u>ЖК «CONTINENT»</u></a> по вул. Трускавецька м. Львів. Не забудьте використати свій <a href="javascript:;" onclick="sertificate()" style="text-decoration: none; color: #000;"><u>СЕРТИФІКАТ</u></a>!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="parktower" class="container">
+    <div class="jumbotron" style="background-color: #e5e5e5;">
+      <div class="row">
+        <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh;"/></a></div>
+        <div class="col-lg-11 large" style="margin-bottom: 2vh;"><h1 style="color: #335ba5; font-size: 350%;">ЖК "PARK TOWER"</h1></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="thumb" style="background-color: #ccc; border-radius: 20px; height: auto; padding: 1vh;">
+            <p style="text-indent: 2vh;"><b>Однокімнатна квартира.</b></p>
+            <p style="text-align: right;">Вартість ремонту з матеріалами <a href="javascript:;" onclick="viewDiv1()" style="text-decoration: none; color: #333"><u>складає:</u></a></br></p>
+            <p id="hides1" style="text-align: right; display: none;">Базовий – 358045 грн.</br>Оптимальний – 448633 грн.</br>Елітний – 592252 грн.</p>
+            <a onclick="pt11()"><img class="img-fluid" src="data/images/sertificate/PARKTOWER/1rooms/1type/main.jpg" alt="" style="height: auto"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="continent" class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh;"/></a></div>
+        <div class="col-lg-11 large" style="margin-bottom: 2vh;"><h1 style="color: #335ba5; font-size: 350%;">ЖК "CONTINENT"</h1></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="thumb" style="background-color: #ccc; border-radius: 20px; height: auto; padding: 1vh;">
+            <p style="text-indent: 2vh;"><b>Трикімнатна квартира</b></p>
+            <p style="text-align: right;">Вартість ремонту з матеріалами <a href="javascript:;" onclick="viewDiv2()" style="text-decoration: none; color: #333"><u>складає:</u></a></br></p>
+            <p id="hides2" style="text-align: right; display: none;">Базовий – 495880 грн.</br>Оптимальний – 591452 грн.</br>Елітний – 830218 грн.</p> 
+            <a onclick="ct31()"><img class="img-fluid" src="data/images/sertificate/CONTINENT/3rooms/1type/main.jpg" alt="" style="height: auto"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="container">
+    <div class="jumbotron" style="text-align: center; background-color: #e5e5e5;">
+      <div class="row">
+        <div class="col-lg-1"><a href="#menu"><img src="data/images/img_447912.png" style="width:10vh; text-align: null;"/></a></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8"><h1 style="color: #335ba5; font-size: 350%;">Контакти</h1></div>
+        <div class="col-lg-2"><a href="https://www.facebook.com/topbudlviv/"><img src="data/images/find-us-on-facebook-badge.png"  style="height: 15vh;"/></a></div>
+      </div>
+      <div class="contact-info" style="margin-top: 4vh;">
+        <div class="row">
+          <div class="col-lg-3">
+            <kbd>Адреса:</kbd><br/>
+            <p>Львів, вул. Зелена 149a, третій поверх</p>
+          </div>
+          <div class="col-lg-3">
+            <kbd>Телефон:</kbd><br/>
+            <p>+38(067)67-59-309<br>+38(067)67-44-103</p>
+          </div>
+          <div class="col-lg-3">
+            <kbd>E-mail:</kbd><br/>
+            <p>topbudlviv@gmail.com<br/>yuratopbud@gmail.com</p>
+          </div>
+          <div class="col-lg-3">
+            <kbd>Графік роботи:</kbd><br/>
+            <p>Пн-Пт: 10:00-18:00<br/>(Сб: за домовленістю)</p>
+          </div>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1238.7038318989332!2d24.060855337758923!3d49.81109364042319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae8040d2adde1%3A0xe2fec07b5b6e3da9!2z0KLQvtC_INCR0YPQtA!5e0!3m2!1suk!2sua!4v1566215995821!5m2!1suk!2sua" width="100%" height="450" frameborder="0" style=""></iframe>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-lg-3">
+        <p class="fl-l"><br/>&copy; 2008-2019 ТОП БУД <br />Всі права захищено</p>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2">
+        <a href="https://topbud.lviv.ua/"><img src="data/images/logo.svg" width="72" height="80" alt=""></a>
+      </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-2">
+        <p class="fl-r"><br/>Created by<br/> Mykhal'chenko Viacheslav</p>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<!--
+<address>
+  <kbd>Адреса:</kbd><br/>
+  <p>Львів, вул. Зелена 147a, третій поверх</p>
+  <kbd>Телефон:</kbd><br/>
+  <p>+38 (067) 67-59-309, +38 (067) 674-41-03</p>
+  <kbd>E-mail:</kbd><br/>
+  <p>topbudlviv@gmail.com</p>
+  <kbd>Графік роботи:</kbd><br/>
+  <p>Пн-Пт: 10:00-18:00 (Сб: за домовленістю)</p>
+</address>
+-->
